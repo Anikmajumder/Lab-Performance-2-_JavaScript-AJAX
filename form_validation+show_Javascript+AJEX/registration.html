@@ -1,0 +1,88 @@
+
+
+
+<html>
+<body>
+<fieldset>
+    <legend><b>REGISTRATION</b></legend>
+	
+
+	<form action="http://127.0.0.1:80/hm/validation1.php" method='POST' id="myForm"  name="myForm">
+		<br/>
+		<table width="100%" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>Name</td>
+				<td>:</td>
+				<td><input id='name' name='name' type='text'></td>
+				
+			</tr>		
+			<tr><td colspan="4"><hr/></td></tr>
+			<tr>
+				<td>Email</td>
+				<td>:</td>
+				<td>
+					<input id='email' name='email'  type='email' >
+					<abbr title="hint: sample@example.com"><b>i</b></abbr>
+				</td>
+				
+			</tr>		
+			
+					
+			<tr><td colspan="4"><hr/></td></tr>
+			<tr>
+				<td>Password</td>
+				<td>:</td>
+				<td><input id='password' name='password' type='password' ></td>
+				
+			</tr>		
+			
+					
+			<tr><td colspan="4"><hr/></td></tr>
+			<tr>
+				<td colspan="3">
+					
+						<legend>Gender</legend>    
+						<input id='male' name="gender" type="radio" value="male">Male
+						<input id='female' name="gender" type="radio"value="female">Female
+						<input id='other' name="gender" type="radio" value="others">Other
+					
+				</td>
+				<td><div id='gender'></div></td>
+			</tr>		
+			<tr><td colspan="4"><hr/></td></tr>
+			<tr>
+				<td colspan="3">
+					
+						<legend>Date of Birth</legend>    
+						<input id='date' name="date"type="text" size="2" />/
+						<input id='month' name="month"type="text" size="2" />/
+						<input id='year' name="year" type="text" size="4" />
+						<font size="2"><i>(dd/mm/yyyy)</i></font>
+					
+				</td>
+				
+			</tr>
+		</table>
+		<hr/>
+		<input onclick="validateForm()" type='button' value='Submit'>
+		<input type="reset">
+	</form>
+</fieldset>
+
+<script src="script1.js"></script>
+<form action=""> 
+  
+  <select name="customers" onchange="showCustomer(this.value)">
+    <option value="">Select a customer:</option>
+    <option value="0">users</option>
+   
+    
+  </select>
+</form>
+<br>
+<div id="txtHint">Customer info will be listed here...</div>
+
+
+</body>
+</html>
+
